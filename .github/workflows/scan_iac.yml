@@ -18,9 +18,7 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v3
 
-
       - name: Scan IAC files
-        continue-on-error: true
         uses: sysdiglabs/scan-action@v6
         with:
           sysdig-secure-token: ${{ secrets.SYSDIG_SECURE_TOKEN }}
