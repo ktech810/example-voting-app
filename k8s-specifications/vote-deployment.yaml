@@ -20,8 +20,10 @@ spec:
         ports:
         - containerPort: 80
           name: vote
-# my test
-# test
-# test 
-
-# test-1
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "128Mi"
+          requests:
+            cpu: "250m"
+            memory: "64Mi"
